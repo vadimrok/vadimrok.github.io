@@ -1,0 +1,707 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.markedcontent
+	{mso-style-name:markedcontent;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.3in .3in .3in .3in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b>PURPOSE:</b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>The <b>LOCATION
+ASSIST SERVICE</b> (the App) is a navigation aide aimed at hikers, explorers or
+boaters that uses received Global Positioning System (GPS) signals to: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>provide
+various running and summary statistics of the user’s trip as a label floating
+on top of other applications</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>graphically
+display a collection of locations the user has been visiting (crumbs)</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>create
+waypoints with current or any GPS location and display them on a current track</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>aide
+a user to follow a preloaded track or reaching a waypoint by showing the user’s
+location and a compass</span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>playback
+the current track in the same sequence it was created</span></b><span
+style='font-size:12.0pt;line-height:115%;color:#C00000'> </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>It also
+allows provides GPX files managing capabilities such as:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>importing
+external GPX files and converting them into tracks to be displayed by the app</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>converting
+user’s tracks into GPX files and vice versa</span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-size:12.0pt;line-height:115%;color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:115%;color:#C00000'>sharing
+user’s GPX files via e-mail, messenger, etc. to be imported into external
+applications such as Google Maps</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>(</span><span
+style='font-size:12.0pt;line-height:115%'>GPX or GPS exchange forma</span><span
+style='left:calc(var(--scale-factor)*228.65px);top:calc(var(--scale-factor)*257.43px);
+font-size:calc(var(--scale-factor)*8.64px)' role=presentation>t</span><span
+style='left:calc(var(--scale-factor)*231.60px);top:calc(var(--scale-factor)*257.43px);
+font-size:calc(var(--scale-factor)*8.64px);transform: scaleX(0.928388)' role=presentation>,</span><span
+style='font-size:12.0pt;line-height:115%'> is an XML file format for storing
+coordinate data. It</span> <span class=markedcontent><span style='font-size:
+12.0pt;line-height:115%'>can store waypoints, tracks, and routes in a way that
+is easy to process and convert to other forms</span></span><span
+style='font-size:12.0pt;line-height:115%'>)</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Finally it
+allows <b><span style='color:#C00000'>saving trips summaries as text for
+further viewing and sharing via e-mail, messenger, etc.</span></b></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>The App is
+especially useful in the areas such as open water or a forest where a
+traditional map is of a very limited use. The App is implemented as a service
+so it can keep collecting data even when running in the background. Note that
+presently the App does not show the map on the track screen – it might be added
+in the future.</span></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>DEFINITIONS:</b></p>
+
+<p class=MsoNormal><b>TRIP</b> – various statistics captured between clicking ‘<span
+style='color:#00B050'>Start</span>’ and ‘<span style='color:#00B050'>Stop</span>’
+on the Settings screen provided at least one GPS location was registered</p>
+
+<p class=MsoNormal><b>TRACK</b> – a collection of GPS locations (<b>CRUMBS</b>)
+gathered during a TRIP. Can be backed up; named and stored in the device
+memory; can be exported as part of a GPX file and displayed in Google Maps and
+other software that can consume GPX file format. A TRACK can be imported into
+the App and converted into the internal format. Thus a user can have a TRACK of
+a particular hike to follow before going hiking.  TRACK also can be played back
+(animated) to see its natural progression. TRACK can be backed up automatically
+every 50 CRUMBS.</p>
+
+<p class=MsoNormal><b>CRUMB</b> - a GPS location that includes latitude,
+longitude, timestamp and altitude (if available). Collection of <b>CRUMBS</b>
+(a <b>TRACK</b>) is displayed on the Track Screen and can be followed by the
+user to find the way back or to a desired <b>WAYPOINT</b></p>
+
+<p class=MsoNormal><b>WAYPOINT</b> - a named <b>CRUMB </b>whose name is
+displayed on the Track Screen and can be stored in the device memory and
+exported as part of a GPX file and displayed in Google Maps and other software
+that can consume GPX file format</p>
+
+<p class=MsoNormal><b>FLOATING LABEL</b> - a user-sized overlay window <b><i>that
+floats on top of other running applications or a home screen</i></b> on your
+device and displays various statistics of your <b>TRIP</b>. Can have a
+transparent or a solid white background. Can be hidden or relocated to any
+position on the screen for convenience</p>
+
+<p class=MsoNormal>Any combination of the following parameters can be displayed
+and changed while the App is running.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Current latitude, longitude and altitude (if altitude reading is
+available in hardware on your device)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Difference between current and starting altitude (point-to-point or P2P
+altitude change)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Lowest, highest  trip altitudes and their difference (altitude range) </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Current elevation angle</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Average elevation angle of the trip</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Current speed over a two dimensional surface (does not account for
+altitude)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Current 3-D speed over a three-dimensional surface (accounts for
+altitude)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Average speed over a two dimensional surface (does not account for
+altitude)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Average 3-D speed over a three-dimensional surface (accounts for
+altitude)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Total covered distance over a two dimensional surface (does not account
+for altitude)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Total covered 3-D distance over a three dimensional surface (accounts
+for altitude)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Straight distance between starting and current point over a two
+dimensional surface (P2P distance)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Last and average bearing</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Trip duration (time between the first error-free GPS reading and current
+time)</p>
+
+<p class=MsoNormal><b><u>APPLICATION PERMISSIONS AND REQUIREMENTS</u></b></p>
+
+<p class=MsoNormal>In order for the App to perform its functions the following
+permissions must be granted: <u>‘Location’ and ‘Permit drawing over other apps’</u>.
+The App will request those permissions automatically upon first run. The App
+has been tested on Android versions 11, 12 and 13. Your device also must have a
+GPS receiver. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>&nbsp;</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>QUICK OPERATION
+SUMMARY</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i>Push a button
+labeled ‘H’ in the upper right corner on other screens of the App for a
+detailed description of the operations on that screen</i></b></p>
+
+<p class=MsoNormal><b><u><span style='text-decoration:none'>&nbsp;</span></u></b></p>
+
+<p class=MsoNormal><b><u>TRIP Operation  (Configuration  screen)</u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Clicking
+‘<span style='color:#00B050'>Start</span>’ begins the TRIP data collection and
+puts the App in the <b>ONLINE</b> mode.  A FLOATING LABEL will appear with the
+information you configure to view via ‘Options’ selector</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Clicking
+‘<span style='color:#00B050'>Stop</span>’ finishes the TRIP data collection and
+puts the App in the <b>OFFLINE</b> mode. The user will be presented with a Trip
+Summary window and options to share and/or save it</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>When
+the App is in ONLINE mode the ‘<span style='color:#00B050'>Pause</span>’ button
+becomes enabled.  Clicking on it puts the App in the <b>PAUSED</b> mode – it
+stops listening on the GPS location (pause time does not count in the stats).
+Now the button reads ‘<span style='color:#00B050'>Resume</span><span
+style='color:black'>’</span> </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>When
+the App is in PAUSED mode clicking on ‘<span style='color:#00B050'>Resume</span><span
+style='color:black'>’ button </span>puts the App in the <b>ONLINE</b> mode and
+the data collection resumes</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>‘Accuracy’
+option means the accepted accuracy of the GPS receiver in your device to
+register a location. The smaller the value is – the more locations will be
+rejected by the device’s GPS receiver as inaccurate. A 10-meter accuracy is
+sufficient for most applications</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>‘Rate’
+option means the interval in seconds between two successive GPS locations
+received by the App. For hiking 10 seconds is sufficient, for driving or
+boating the rate should be smaller for more precise tracking</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Clicking
+‘<span style='color:#00B050'>Trips</span>’ on the Main screen opens the ‘Saved
+trips’ screen where the user can view/delete/share summaries for each saved
+TRIP</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Clicking
+on the floating label at any time shows running summary of the TRIP</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><u>FLOATING LABEL</u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Shows
+the TRIP information (configured via ‘Options’ on the Configuration screen)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Floats
+on top of any other running application</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Shows
+a <b><i>non-magnetic</i></b> calculated (based on two last GPS locations)
+bearing in the upper left corner via a compass image <b><span style='font-size:
+18.0pt;line-height:115%;font-family:"Cambria Math","serif"'>&#9099;</span></b>when
+available or X when not available</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+hide, click on the compass image  in the upper left corner of the LABEL, to
+show – click on the image again</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+relocate , drag the LABEL to the desired location on the screen with your
+finger</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+see the running summary of your TRIP, click on the FLOATING LABEL text</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+change the size of the label use a ‘Label size’ selector on top of the
+Configuration screen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To change
+Distance measurement units (meters, kilometers, feet, yards, miles, nautical
+miles) use a ‘Distance Units’ selector on the Configuration screen</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>9)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+change Speed measurement units (meters per second, kilometers per hour, feet
+per second, miles per hour, knots) use a ‘Speed Units’ selector on the
+Configuration screen</p>
+
+<p class=MsoNormal><b><u><span style='text-decoration:none'>&nbsp;</span></u></b></p>
+
+<p class=MsoNormal><b><u>TRACKS Operations</u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Clicking
+‘<span style='color:#00B050'>Tracks</span>’ opens the TRACK screen where CRUMBS
+collected along your route are displayed. The user will be presented with an
+option to load the last backed-up or saved <span style='color:black'>TRACK </span>(either
+named or unnamed)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+get back to the Configuration screen use the ‘Back’ button on your device.
+Tracking will continue</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Pushing
+a Menu button (<span style='font-family:"Cambria Math","serif"'>&#9636;</span>)in
+the upper left corner of the TRACK screen shows a TRACKS menu with the
+following options:</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Backup current track</span>’ – backs up the
+current TRACK (CRUMBS and WAYPOINTS) in the internal binary format. If the file
+had been named and saved prior – it would be saved to the same file. Otherwise
+it would be saved as an ‘Unnamed’ file. Note that the ‘Unnamed’ file cannot be
+converted to GPX format and shared.  Moreover, it will be overwritten on the
+next app run. So it is recommended to save it as a named file on the ‘<span
+style='color:#00B050'>Manage TRACKS</span>’ screen. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Playback current track</span>’ – animates the
+TRACK. After the animation is finished, use <b><span style='font-family:"MS Gothic"'>&#9415;</span></b>
+button in the upper right corner to replay or <b><span style='font-family:"MS Gothic"'>&#9746;</span></b>
+button to get out of the playback mode</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Clear crumbs</span> – clears collected crumbs
+but will accept new ones</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Manage tracks</span>’ -  takes you to the TRACK
+editing screen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Edit GPX Files</span>’ - takes you to the GPX
+files  editing screen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Manage Track Waypoints</span>’ – takes you to
+the TRACK WAYPOINTS editing screen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span style='color:red'>Manage Global Waypoints</span>’ – takes you to
+the Global WAYPOINTS editing screen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CRUMBS
+are collected at the distance of no less than 10 meters from each other. Last
+CRUMB is shown as red circle of a large diameter, first crumb – in black</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>TRACK
+screen shows compass <b><i>– it is not a magnetic compass</i></b> and
+determines the bearing based on the last two collected GPS locations</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Zooming
+in <span style='font-family:"Cambria Math","serif"'>&#8853;</span>, out <span
+style='font-family:"Cambria Math","serif"'>&#8854;</span> and restoring to the
+original size <span style='font-family:"Cambria Math","serif"'>&#8860;</span>
+are supported via semi-transparent icons in the lower right corner. If Zoom IN
+level is more than one – drag is also supported. The current size of the shown
+earth surface fragment is shown at the top of the screen and reflects the current
+zoom level. Zooming OUT is restricted to the original zoom level and only
+enabled if more than one CRUMB is collected. Zooming in is restricted to
+approximately 10 meter per screen width</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Apps
+status (ONLINE, OFFLINE, PAUSED) along with the current TRACK’s name are
+displayed in the lower left corner of the screen</p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal><b><u>Manage TRACKS Screen</u>                </b>(<i>Push a
+button labeled ‘H’ in the upper right corner on other screens of the App for a
+detailed description of the operations on that screen)</i></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'> ‘Current: Save as’. </span><span
+style='color:black'>A name must be provided.  Creates and saves a new file with
+the current crumbs. Current TRACK will assume a name of the newly created file</span><span
+style='color:#C00000'>  </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Current: Replace with Selected’. </span><span
+style='color:black'>Crumbs of the current TRACK will be replaced with the
+crumbs of the selected TRACK.  Current TRACK will assume the name of the
+selected TRACK</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Current: Merge with Selected’. </span><span
+style='color:black'>Crumbs of the current TRACK will be appended to the crumbs
+of the selected TRACK.  Current TRACK will retain its name</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Selected: Save as GPX’. </span><span
+style='color:black'>Saves (converts) selected TRACK into GPX format so it can
+be viewed with appropriate software. Name of the created GPX file will appear
+on </span><span style='color:#00B050'>“Manage GPX Files</span><span
+style='color:black'>” screen</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Selected: Delete. </span><span
+style='color:black'>Deletes selected TRACK. If the current TRACK is deleted –
+it becomes “!Unnamed!” and current crumbs are NOT affected</span><span
+style='color:#C00000'> </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>To get back to the Track Screen use the ‘Back’ button on your
+device</p>
+
+<p class=MsoNormal><b><u>Manage GPX Files Screen</u>            </b>(<i>Push a
+button labeled ‘H’ in the upper right corner on other screens of the App for a
+detailed description of the operations on that screen)</i></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Selected: Delete. </span><span
+style='color:black'>Deletes selected GPX file. Corresponding TRACK (if any) is
+NOT affected</span><span style='color:#C00000'> </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>-‘Selected: Share’. </span><span
+style='color:black'>Allows sharing the selected GPX file as an attachment via
+any software installed on your device such as Email, WhatsApp, etc. If a File Manager
+is installed – the file can be copied to any public directory such as Download
+or DCIM</span><span style='color:#C00000'>  </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>-‘Selected: Convert’. </span><span
+style='color:black'>Converts the selected GPX file into a TRACK that can be
+displayed on the </span><span style='color:#00B050'>“Track” </span>screen<span
+style='color:black'>. Name of the converted TRACK will appear on the </span><span
+style='color:#00B050'>“Manage Tracks” </span>screen<span style='color:black'>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>-‘Import External’. </span><span
+style='color:black'>Gives an opportunity to copy a GPX file from any public
+directory such as Download or DCIM</span><span style='color:#C00000'>  </span><span
+style='color:black'>on your device into the App. The copied file can be further
+converted via </span><span style='color:#C00000'>‘Selected: Convert’</span><span
+style='color:black'> to be used by the App provided its format is proper.  If
+the external file has more than one track in it only the first one will be
+converted. If it has Routes in it – only the first one will be converted into
+TRACK.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>To get back to the Track Screen use the ‘Back’ button on your
+device</p>
+
+<p class=MsoNormal><b><u>Manage TRACK Waypoints screen</u> <i>          </i></b><i>(Push
+a button labeled ‘H’ in the upper right corner on other screens of the App for
+a detailed description of the operations on that screen)</i></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Add’. </span><span style='color:
+black'>Creates a Waypoint with the current GPS location and adds it to the
+current TRACK. This function is disabled if the App is in Offline mode. After
+Waypoint is created it will be seen</span><span style='color:#C00000'> </span><span
+style='color:black'>on the </span><span style='color:#00B050'>“Tracks” </span>screen
+– the view will be extended if necessary so the Waypoint would be visible. A
+waypoint name must be supplied. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Delete’. </span><span
+style='color:black'>Deletes a selected Waypoint from the Current TRACK.</span></p>
+
+<p class=MsoListParagraphCxSpLast>&nbsp;</p>
+
+<p class=MsoNormal><b><u>Manage Global Waypoints screen</u>           </b>(<i>Push
+a button labeled ‘H’ in the upper right corner on other screens of the App for
+a detailed description of the operations on that screen)</i></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Add Specific Location’. </span><span
+style='color:black'>Creates a Global Waypoint with the specified latitude and
+longitude that can be typed in in the fields provided. Up to 6 decimal digits
+are allowed. </span>A waypoint name must be supplied.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Add Current Location’. </span><span
+style='color:black'>Creates a Global Waypoint with the current GPS location.
+This function is disabled if the App is in Offline mode.</span> A waypoint name
+must be supplied. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Delete’. </span><span
+style='color:black'>Deletes a selected Global Waypoint.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='color:black'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:#C00000'>‘Attach to Current Track’. </span><span
+style='color:black'>Adds a selected Global Waypoint to the current TRACK. After
+Waypoint is added it will be seen</span><span style='color:#C00000'> </span><span
+style='color:black'>on the </span><span style='color:#00B050'>“Tracks” </span>screen
+– the view will be extended if necessary so the Waypoint would be visible. A
+Waypoint name will also appear in the ListView  on <span style='color:black'> the
+</span><span style='color:#00B050'>“Manage Track Waypoints” </span>screen </p>
+
+<p class=MsoListParagraphCxSpLast>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:.25in'><b><u>TIPS</u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Every
+device has a different GPS receiver. A larger device is more likely to be more
+sensitive since it can house a larger antenna. The user should vary the
+‘Accuracy’ parameter to figure out what works for their device. The information
+label shows ‘Low accuracy: N’ where N is the actual accuracy of the last
+received location. If this value is consistently larger than the accuracy set
+on the Configuration screen, increase the accuracy value to start collecting
+data.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>When
+moving with a slow speed (pedestrian or a jogger) the current speed values are
+not very reliable on a device with a bad sensitivity such as a pretty much any
+smart phone. The higher is your data acquisition rate – the lower the speed
+accuracy is since the distance between two successive locations could be
+smaller than the measurement error. Average speed values are pretty accurate</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Some
+GPS receivers do not provide the altitude readings and in general altitude
+readings are not very reliable</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A
+CRUMB Track screen shows compass. It is not a magnetic compass – the angle is
+calculated based on two last locations. The reason behind that is twofold.
+Firstly, most smart phones do not have a magnetic compass. Secondly, even if
+they do – they are not accurate. Thus a user must be moving to have a reliable
+compass reading. Reading of the CRUMB track compass can be different from the
+FLOATING LABEL compass because the FLOATING LABEL compass update rate is what
+the user selected on the Configuration Screen and the CRUMB Track Screen
+compass is updated every 10 meters or more.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Update
+Rate should be selected based upon the speed of movement. The faster you move –
+the higher the rate should be</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Application
+performs fine in the ‘Airplane’ mode – there is no need for a cellular
+connection. Only the time of the first data fix might be affected. Actually
+turning of the cellular radio on your device will be beneficial for saving
+battery.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Pausing
+or stopping the TRIP  will disable a GPS receiver and save battery (unless some
+other application will be using a GPS receiver at the same time)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>END OF QUICK
+OPERATION SUMMARY</b></p>
+
+<p class=MsoListParagraph>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
